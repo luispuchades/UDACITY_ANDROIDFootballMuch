@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Football Much</string>
+
+    <!--Strings for contents-->
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <string name="match_results">MATCH RESULTS</string>
+    <string name="goals">GOALS</string>
+    <string name="kick_to_goal">Kick to Goal (KTG)</string>
+    <string name="passes_success">Passes Success</string>
+    <string name="passes_failed">Passes Failed</string>
+    <string name="plus_one">+1</string>
+    <string name="reset">RESET</string>
+</resources>
