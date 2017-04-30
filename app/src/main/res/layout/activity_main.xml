@@ -1,279 +1,279 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.example.android.footballmuch.MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="@drawable/football_ground">
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1" >
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/football_ground">
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="1" >
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight=".6" >
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/titleMatch"
-                    android:text="@string/team_a" />
-
-                <TextView
-                    android:id="@+id/scoreGoalsTeamA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/teamScore"
-                    android:text="0" />
-
-                <TextView
-                    android:id="@+id/kickToGoalTeamA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="0" />
-
-                <TextView
-                    android:id="@+id/passesSucessTeamA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="0" />
-
-                <TextView
-                    android:id="@+id/passesFailedTeamA"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="0" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/titleMatch"
-                    android:text="@string/match_results" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/teamScore"
-                    android:text="@string/goals" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="@string/kick_to_goal" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="@string/passes_success" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="@string/passes_failed" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <TextView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    style="@style/titleMatch"
-                    android:text="@string/team_b" />
+                    android:orientation="vertical"
+                    android:layout_weight="0.8" >
 
-                <TextView
-                    android:id="@+id/scoreGoalsTeamB"
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/titleMatch"
+                        android:text="@string/team_a" />
+
+                    <TextView
+                        android:id="@+id/scoreGoalsTeamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/teamScore"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/kickToGoalTeamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/passesSucessTeamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/passesFailedTeamA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="0" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.8">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/titleMatch"
+                        android:text="@string/match_results" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/teamScore"
+                        android:text="@string/goals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="@string/kick_to_goal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="@string/passes_success" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="@string/passes_failed" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    style="@style/teamScore"
-                    android:text="0" />
+                    android:orientation="vertical"
+                    android:layout_weight="0.8">
 
-                <TextView
-                    android:id="@+id/kickToGoalTeamB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="0" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        style="@style/titleMatch"
+                        android:text="@string/team_b" />
 
-                <TextView
-                    android:id="@+id/passesSucessTeamB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="0" />
+                    <TextView
+                        android:id="@+id/scoreGoalsTeamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/teamScore"
+                        android:text="0" />
 
-                <TextView
-                    android:id="@+id/passesFailedTeamB"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    style="@style/mainScore"
-                    android:text="0" />
+                    <TextView
+                        android:id="@+id/kickToGoalTeamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="0" />
 
+                    <TextView
+                        android:id="@+id/passesSucessTeamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="0" />
+
+                    <TextView
+                        android:id="@+id/passesFailedTeamB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/mainScore"
+                        android:text="0" />
+
+
+                </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="3dp"
-            android:background="@android:color/darker_gray"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp" >
-        </View>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="0.9" >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" >
+            </View>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="1">
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="1.1" >
 
-                <Button
-                    android:id="@+id/buttonGoalTeamA"
-                    style="@style/buttonMainScore"
-                    android:text="@string/plus_one"
-                    android:onClick="addGoalTeamA"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/buttonKTGTeamA"
-                    style="@style/buttonMainScore"
-                    android:text="@string/plus_one"
-                    android:onClick="addKickToGoalTeamA"/>
+                    <Button
+                        android:id="@+id/buttonGoalTeamA"
+                        style="@style/buttonMainScore"
+                        android:text="@string/plus_one"
+                        android:onClick="addGoalTeamA"/>
 
-                <Button
-                    android:id="@+id/buttonPassesSuccessTeamA"
-                    style="@style/buttonMainScore"
-                    android:text="@string/plus_one"
-                    android:onClick="addPassesSuccessTeamA"/>
+                    <Button
+                        android:id="@+id/buttonKTGTeamA"
+                        style="@style/buttonMainScore"
+                        android:text="@string/plus_one"
+                        android:onClick="addKickToGoalTeamA"/>
 
-                <Button
-                    android:id="@+id/buttonPassesFailedTeamA"
-                    style="@style/buttonMainScore"
-                    android:text="@string/plus_one"
-                    android:onClick="addPassesFailedTeamA"/>
+                    <Button
+                        android:id="@+id/buttonPassesSuccessTeamA"
+                        style="@style/buttonMainScore"
+                        android:text="@string/plus_one"
+                        android:onClick="addPassesSuccessTeamA"/>
 
+                    <Button
+                        android:id="@+id/buttonPassesFailedTeamA"
+                        style="@style/buttonMainScore"
+                        android:text="@string/plus_one"
+                        android:onClick="addPassesFailedTeamA"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.6">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/textScoring"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/goals" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/textScoring"
+                        android:layout_marginTop="22dp"
+                        android:text="@string/kick_to_goal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/textScoring"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/passes_success" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        style="@style/textScoring"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/passes_failed" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/buttonGoalTeamB"
+                        style="@style/buttonMainScore"
+                        android:text="@string/plus_one"
+                        android:onClick="addGoalTeamB"/>
+
+                    <Button
+                        android:id="@+id/buttonKTGTeamB"
+                        style="@style/buttonMainScore"
+                        android:text="@string/plus_one"
+                        android:onClick="addKickToGoalTeamB"/>
+
+                    <Button
+                        android:id="@+id/buttonPassesSuccessTeamB"
+                        style="@style/buttonMainScore"
+                        android:text="@string/plus_one"
+                        android:onClick="addPassesSuccessTeamB"/>
+
+                    <Button
+                        android:id="@+id/buttonPassesFailedTeamB"
+                        style="@style/buttonMainScore"
+                        android:text="@string/plus_one"
+                        android:onClick="addPassesFailedTeamB"/>
+                </LinearLayout>
             </LinearLayout>
 
+            <!--Artificial space for the RESET button-->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="0.6">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    style="@style/textScoring"
-                    android:layout_marginTop="18dp"
-                    android:text="@string/goals" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    style="@style/textScoring"
-                    android:layout_marginTop="22dp"
-                    android:text="@string/kick_to_goal" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    style="@style/textScoring"
-                    android:layout_marginTop="24dp"
-                    android:text="@string/passes_success" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    style="@style/textScoring"
-                    android:layout_marginTop="24dp"
-                    android:text="@string/passes_failed" />
+                android:layout_weight="0.3">
 
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_weight="1">
-
-                <Button
-                    android:id="@+id/buttonGoalTeamB"
-                    style="@style/buttonMainScore"
-                    android:text="@string/plus_one"
-                    android:onClick="addGoalTeamB"/>
-
-                <Button
-                    android:id="@+id/buttonKTGTeamB"
-                    style="@style/buttonMainScore"
-                    android:text="@string/plus_one"
-                    android:onClick="addKickToGoalTeamB"/>
-
-                <Button
-                    android:id="@+id/buttonPassesSuccessTeamB"
-                    style="@style/buttonMainScore"
-                    android:text="@string/plus_one"
-                    android:onClick="addPassesSuccessTeamB"/>
-
-                <Button
-                    android:id="@+id/buttonPassesFailedTeamB"
-                    style="@style/buttonMainScore"
-                    android:text="@string/plus_one"
-                    android:onClick="addPassesFailedTeamB"/>
-
-            </LinearLayout>
-
         </LinearLayout>
 
-        <!--Artificial space for the RESET button-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_weight="0.3">
-
-        </LinearLayout>
-    </LinearLayout>
-
-
-    <Button
-        android:layout_width="wrap_content"
-        style="@style/buttonMainScore"
-        android:layout_marginBottom="16dp"
-        android:text="@string/reset"
-        android:onClick="resetScores"/>
-
-</RelativeLayout>
+        <Button
+            android:layout_width="wrap_content"
+            style="@style/buttonMainScore"
+            android:layout_marginBottom="16dp"
+            android:text="@string/reset"
+            android:onClick="resetScores"/>
+    </RelativeLayout>
+</ScrollView>
