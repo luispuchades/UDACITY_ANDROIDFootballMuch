@@ -14,7 +14,7 @@
         <item name="android:textSize">16sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">@dimen/general_top_margin</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
@@ -24,7 +24,7 @@
         <item name="android:textSize">40sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">@dimen/general_top_margin</item>
         <item name="android:fontFamily">sans-serif-light</item>
     </style>
 
@@ -34,7 +34,7 @@
         <item name="android:textSize">18sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">@dimen/general_top_margin</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
@@ -44,7 +44,7 @@
         <item name="android:textSize">16sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginTop">@dimen/general_top_margin</item>
     </style>
 
     <!--Team Main Score for Passes - Success or Failed-->
@@ -55,11 +55,11 @@
         <item name="android:textSize">20sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center</item>
-        <!--<item name="android:layout_alignParentBottom">true</item>-->
+        <item name="android:layout_alignParentBottom">true</item>
         <item name="android:layout_centerHorizontal">true</item>
         <item name="android:layout_marginTop">4dp</item>
-        <item name="android:layout_marginLeft">16dp</item>
-        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginLeft">@dimen/general_lateral_margin</item>
+        <item name="android:layout_marginRight">@dimen/general_lateral_margin</item>
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
@@ -73,5 +73,12 @@
         <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 
+    <style name="viewString">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/viewString_height</item>
+        <item name="android:background">@android:color/darker_gray</item>
+        <item name="android:layout_marginLeft">@dimen/general_lateral_margin</item>
+        <item name="android:layout_marginRight">@dimen/general_lateral_margin</item>
+    </style>
 
 </resources>

@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-import static android.os.Build.VERSION_CODES.M;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,9 +28,6 @@ public class MainActivity extends AppCompatActivity {
     //Team A Passes Failed
     int passesFailedTeamB = 0;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,9 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void addGoalTeamA(View view) {
         goalsTeamA = goalsTeamA + 1;
-
         displayGoalsTeamA(goalsTeamA);
-
     }
 
     public void addGoalTeamB(View view) {
@@ -55,21 +48,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void addKickToGoalTeamA(View view) {
-
         kickToGoalTeamA = kickToGoalTeamA + 1;
-
-
         displayKickToGoalTeamA(kickToGoalTeamA);
 
     }
 
     public void addKickToGoalTeamB(View view) {
-
         kickToGoalTeamB = kickToGoalTeamB + 1;
-
-
         displayKickToGoalTeamB(kickToGoalTeamB);
-
     }
 
     public void addPassesSuccessTeamA(View view) {
@@ -116,9 +102,6 @@ public class MainActivity extends AppCompatActivity {
         displayPassesSuccessTeamB(passesSuccessTeamB);
         displayPassesFailedTeamA(passesFailedTeamA);
         displayPassesFailedTeamB(passesFailedTeamB);
-
-        //Statistics reset
-
     }
 
     //Button event capture and definition
@@ -163,6 +146,4 @@ public class MainActivity extends AppCompatActivity {
         TextView passesFailedView = (TextView) findViewById(R.id.passesFailedTeamB);
         passesFailedView.setText(String.valueOf(score));
     }
-
-
 }
