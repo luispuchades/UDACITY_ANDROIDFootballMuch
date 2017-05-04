@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-
 public class MainActivity extends AppCompatActivity {
 
     //Variables declaration and initialization
@@ -36,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
     //Event declaration
     //*****************
-
     public void addGoalTeamA(View view) {
         goalsTeamA = goalsTeamA + 1;
         displayGoalsTeamA(goalsTeamA);
